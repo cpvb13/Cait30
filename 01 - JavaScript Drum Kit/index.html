@@ -6,6 +6,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!--<div class="note">-->
+    <!--<kbd> &nbsp; Press to Activate Lo-fi Hip-Hop Mode>>> </kbd>-->
+  <!--</div>-->
+
+    <div class = "thumb">
+      <div data-video="hHW1oY26kxQ"
+           data-autoplay="0"
+           data-loop="1"
+           disablekb="1"
+           id="youtube-audio">
+      </div>
+    </div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
 
 
   <div class="keys">
@@ -58,6 +72,8 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+
+
   function removeTransition(e) {
     if (e.propertyName !== 'transform') return;
     e.target.classList.remove('playing');
@@ -69,7 +85,7 @@
     if (!audio) return;
 
     key.classList.add('playing');
-    audio.currentTime = 0;
+    audio.currentTime = 0; // rewind to start
     audio.play();
   }
 

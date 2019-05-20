@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: url('https://media1.tenor.com/images/0f216568c6f10ba607cad3c05ad47fed/tenor.gif?itemid=5490146') bottom center;
   background-size: cover;
 }
 
@@ -19,7 +19,7 @@ body,html {
 }
 
 .key {
-  border: .4rem solid black;
+  border: .2rem solid white;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -32,10 +32,39 @@ body,html {
   text-shadow: 0 0 .5rem black;
 }
 
+.note {
+   display: block;
+   border: .2rem solid white;
+   border-radius: .5rem;
+   margin: 1rem;
+   font-size: 1.5rem;
+   padding: 1rem .5rem;
+   min-height: 5vh;
+   align: center;
+   text-align: center;
+   color: white;
+ }
+
+.thumb {
+   display: block;
+   border: .2rem solid white;
+   border-radius: 50rem;
+   color: white;
+   margin: 1rem;
+   height: 9.45rem;
+   width: 9.45rem;
+   text-align: center;
+   background-color: lightyellow;
+}
+.nbd {
+  display: block;
+  font-size: 4rem;
+}
+
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #ffff99;
+  box-shadow: 0 0 1rem #ffff99;
 }
 
 kbd {
@@ -47,5 +76,5 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #ffff99;
 }
